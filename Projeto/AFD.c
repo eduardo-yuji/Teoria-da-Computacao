@@ -34,7 +34,7 @@ int AFD(char input[200], int max, int init){
     // Q[3] = {'0','01','012'};
     
     while(inputPointer < max){
-        printf("Itaracao: %d\nEstado atual: q%d  ----  Caractere atual: %c\n\n", cont, statePointer, input[inputPointer]);
+        printf("Iteracao: %d\nEstado atual: q%d  ----  Caractere atual: %c\n\n", cont, statePointer, input[inputPointer]);
         cont = cont + 1;
         switch(statePointer){ //verifica qual nó está apontando
             case 0:{ //{q0}
@@ -99,7 +99,7 @@ int main() {
     //int F[1] = {2}; //estado final, apenas para visualização
     
     if (verificaAlfabeto(input, max, E) == 0){ //verifica se input está dentro do alfabeto
-        printf("\nERRO: INPUT CONTEM ALFABETO FORA DO ALFABETO\n\n");
+        printf("\nERRO: INPUT CONTEM CARACTERE FORA DO ALFABETO\n\n");
         return(2);
     }
     
